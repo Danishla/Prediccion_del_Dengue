@@ -1,0 +1,3 @@
+% Reglas de diagnóstico
+gripe(X) :- malestar(X), fiebre(X), tos(X), sec_nas(X).
+dengue(X) :- malestar(X), fiebre(X), dolor_art_mus(X), rash(X), dolor_ojos(X), nausea(X).
