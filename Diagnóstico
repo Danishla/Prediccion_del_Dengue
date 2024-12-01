@@ -1,0 +1,6 @@
+% Diagnóstico
+diagnostico(X) :- nl, write('Se investiga GRIPE'), gripe(X),
+                  nl, write(X), write(' tiene sintomas de GRIPE.'), fail.
+diagnostico(X) :- nl, write('Se investiga DENGUE'), dengue(X),
+                  nl, write(X), write(' tiene sospecha de DENGUE.'), fail.
+diagnostico(X) :- nl, write('NO SE LOGRO UN DIAGNOSTICO.').
