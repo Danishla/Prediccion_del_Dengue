@@ -1,0 +1,10 @@
+% Preguntas y síntomas
+pregunta(X, P) :- write(X), write(' '), write(P), read(Respuesta), Respuesta == s.
+malestar(X) :- pregunta(X, 'tiene malestar? ').
+fiebre(X) :- pregunta(X, 'tiene fiebre? ').
+tos(X) :- pregunta(X, 'tiene tos? ').
+sec_nas(X) :- pregunta(X, 'tiene secrecion nasal? ').
+dolor_art_mus(X) :- pregunta(X, 'tiene dolor muscular o en articulaciones? ').
+rash(X) :- pregunta(X, 'tiene rash? ').
+dolor_ojos(X) :- pregunta(X, 'tiene dolor detrás de los ojos? ').
+nausea(X) :- pregunta(X, 'tiene nauseas? ').
